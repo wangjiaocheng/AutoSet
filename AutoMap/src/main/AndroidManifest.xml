@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="top.autoget.automap">
+    <!--地图、导航、猎鹰-->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--导航-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--猎鹰-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application>
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="8bf178f02712e6fbb68b0195bfa961b6" />
+        <!--导航-->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".MapActivity" />
+        <activity android:name=".MapCloudDetailActivity" />
+        <activity android:name=".MapCloudPreviewActivity" />
+        <activity android:name=".MapRouteActivity" />
+        <activity android:name=".MapRouteBusDetailActivity" />
+        <activity android:name=".MapRouteDriveDetailActivity" />
+        <activity android:name=".MapRouteRideDetailActivity" />
+        <activity android:name=".MapRouteWalkDetailActivity" />
+        <activity android:name=".MapRouteSearchActivity" />
+        <activity android:name=".MapRouteCalculateActivity" />
+        <activity android:name=".MapNaviActivity" />
+        <activity android:name=".MapNaviWalkActivity" />
+        <activity android:name=".MapNaviRideActivity" />
+        <activity android:name=".MapNaviDriveActivity" />
+        <activity android:name=".MapNaviComponentActivity" />
+    </application>
+</manifest>

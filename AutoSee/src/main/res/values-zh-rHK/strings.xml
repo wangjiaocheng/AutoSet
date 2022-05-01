@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">控件庫</string>
+    <string name="recycler_loading">正在加載中…</string>
+    <string name="recycler_load_failed">加載失敗，請點我重試</string>
+    <string name="recycler_load_complete">點擊加載更多</string>
+    <string name="recycler_load_end">沒有更多數據</string>
+</resources>

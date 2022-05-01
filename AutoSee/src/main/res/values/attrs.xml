@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Title">
+        <attr name="leftIcon" format="reference" />
+        <attr name="leftIconVisibility" format="boolean" />
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftTextVisibility" format="boolean" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightIconVisibility" format="boolean" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightTextVisibility" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="titleVisibility" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Seek">
+        <attr name="cells" format="integer" />
+        <attr name="reserve" format="float" />
+        <attr name="minProgress" format="float" />
+        <attr name="maxProgress" format="float" />
+        <attr name="seekBarResId" format="reference" />
+        <attr name="progressHintResId" format="reference" /><!--必须用9patch-->
+        <attr name="lineColorSelected" format="color" />
+        <attr name="lineColorEdge" format="color" />
+        <attr name="thumbPrimaryColor" format="color" />
+        <attr name="thumbSecondaryColor" format="color" />
+        <attr name="markTextArray" format="reference" />
+        <attr name="hideProgressHint" format="boolean" />
+        <attr name="isHintHolder" format="boolean" />
+        <attr name="textPadding" format="dimension" />
+        <attr name="textSize2" format="dimension" />
+        <attr name="hintBGHeight" format="dimension" />
+        <attr name="hintBGWith" format="dimension" />
+        <attr name="seekBarHeight" format="dimension" />
+        <attr name="hintBGPadding" format="dimension" />
+        <attr name="thumbSize" format="dimension" />
+        <attr name="cellMode" format="enum">
+            <enum name="number" value="0" />
+            <enum name="other" value="1" />
+        </attr>
+        <attr name="seekBarMode" format="enum">
+            <enum name="single" value="1" />
+            <enum name="range" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ProgressView">
+        <attr name="stopColor" format="color" />
+        <attr name="finishColor" format="color" />
+        <attr name="loadingColor" format="color" />
+        <attr name="PbTextSize" format="dimension" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ProgressRound">
+        <attr name="circleColor" format="color" />
+        <attr name="circleProgressColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="PrTextSize" format="dimension" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AutoImage">
+        <attr name="ImageSrc" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ScaleImageView">
+        <attr name="panEnabled" format="boolean" />
+        <attr name="zoomEnabled" format="boolean" />
+        <attr name="quickScaleEnabled" format="boolean" />
+        <attr name="tileBackgroundColor" format="color" />
+        <attr name="assetName" format="string" />
+        <attr name="src" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SwipeCaptcha">
+        <attr name="captchaWidth" format="dimension" />
+        <attr name="captchaHeight" format="dimension" />
+        <attr name="matchDeviation" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CardStackView">
+        <attr name="stackOverlapGaps" format="dimension" />
+        <attr name="stackOverlapGapsCollapse" format="dimension" />
+        <attr name="stackHeaderHeight" format="dimension" />
+        <attr name="stackDuration" format="integer" />
+        <attr name="stackNumBottomShow" format="integer" />
+        <attr name="stackAnimationType">
+            <flag name="allDown" value="0" />
+            <flag name="upDown" value="1" />
+            <flag name="upDownStack" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Cobweb">
+        <attr name="spiderNameSize" format="dimension" />
+        <attr name="spiderMaxLevel" format="integer" />
+        <attr name="spiderColor" format="color" />
+        <attr name="spiderRadiusColor" format="color" />
+        <attr name="spiderLevelStrokeColor" format="color" />
+        <attr name="spiderLevelStrokeWidth" format="float" />
+        <attr name="spiderLevelStroke" format="boolean" />
+        <attr name="spiderRotate" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="NetSpeedView">
+        <attr name="TextColor" format="color" />
+        <attr name="NsTextSize" format="dimension" />
+        <attr name="isMulti" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SeatMovie">
+        <attr name="seat_sold" format="reference" />
+        <attr name="seat_checked" format="reference" />
+        <attr name="seat_available" format="reference" />
+        <attr name="overview_sold" format="color" />
+        <attr name="overview_checked" format="color" />
+        <attr name="txt_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RulerWheel">
+        <attr name="ColorMark" format="color|reference" />
+        <attr name="ColorMarkText" format="color|reference" />
+        <attr name="ColorHighlight" format="color|reference" />
+        <attr name="MarkTextSize" format="dimension" />
+        <attr name="MarkTextSizeCenter" format="dimension" />
+        <attr name="CursorSize" format="dimension" />
+        <attr name="IntervalFactor" format="float" />
+        <attr name="MarkRatio" format="float" />
+        <attr name="MarkAdditionalCenter" format="string|reference" />
+    </declare-styleable>
+    <declare-styleable name="ShoppingView">
+        <attr name="sv_duration" format="integer" />
+        <attr name="sv_text" format="string" />
+        <attr name="sv_text_size" format="dimension" />
+        <attr name="sv_bg_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ShineButton">
+        <attr name="btn_color" format="color" />
+        <attr name="btn_color_fill" format="color" />
+        <attr name="enable_flashing" format="boolean" />
+        <attr name="allow_random_color" format="boolean" />
+        <attr name="shine_color_big" format="color" />
+        <attr name="shine_color_small" format="color" />
+        <attr name="shine_size" format="dimension" />
+        <attr name="shine_count" format="integer" />
+        <attr name="animation_duration_shine" format="integer" />
+        <attr name="animation_duration_click" format="integer" />
+        <attr name="shine_turn_angle" format="float" />
+        <attr name="shine_offset_angle_small" format="float" />
+        <attr name="shine_distance_multiple" format="float" />
+    </declare-styleable>
+    <declare-styleable name="PorterShapeImageView">
+        <attr name="siShape" format="integer|reference" />
+    </declare-styleable>
+    <declare-styleable name="HeartLayout">
+        <attr name="xRand" format="dimension" />
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="factorXPoint" format="dimension" />
+        <attr name="factorBezier" format="integer" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="Wave">
+        <attr name="WaveShapeType">
+            <enum name="CIRCLE" value="0" />
+            <enum name="SQUARE" value="1" />
+        </attr>
+        <attr name="WaveColor" format="color" />
+        <attr name="WaveBorder" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Side">
+        <attr name="sidebar_lazy_respond" format="boolean" />
+        <attr name="sidebar_text_color" format="color" />
+        <attr name="sidebar_text_size" format="dimension" />
+        <attr name="sidebar_max_offset" format="dimension" />
+        <attr name="sidebar_position" format="enum">
+            <enum name="right" value="0" />
+            <enum name="left" value="1" />
+        </attr>
+        <attr name="sidebar_text_alignment" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="IndicatorCircle">
+        <attr name="cir_normalColor" format="color" />
+        <attr name="cir_selectedColor" format="color" />
+        <attr name="cir_horizon_margin" format="dimension" />
+        <attr name="cir_canMove" format="boolean" />
+        <attr name="cir_size" format="dimension" />
+        <attr name="cir_rect_width" format="dimension" />
+        <attr name="cir_scale_factor" format="float" />
+        <attr name="cir_type">
+            <enum name="normal" value="0" />
+            <enum name="cirToRect" value="1" />
+            <enum name="scale" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="IndicatorRect">
+        <attr name="rect_normalColor" format="color" />
+        <attr name="rect_selectedColor" format="color" />
+        <attr name="rect_horizon_margin" format="dimension" />
+        <attr name="rect_canMove" format="boolean" />
+        <attr name="rect_height" format="dimension" />
+        <attr name="rect_width" format="dimension" />
+        <attr name="rect_round_size" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Banner">
+        <attr name="banner_isAutoLoop" format="boolean" />
+        <attr name="banner_isCycle" format="boolean" />
+        <attr name="banner_loopTime" format="integer" />
+        <attr name="banner_switchTime" format="integer" />
+        <attr name="banner_loop_max_count" format="integer" />
+        <attr name="banner_l_margin" format="dimension" />
+        <attr name="banner_r_margin" format="dimension" />
+        <attr name="banner_card_height" format="integer|dimension" />
+        <attr name="banner_transformer">
+            <enum name="card" value="0" />
+            <enum name="mz" value="1" />
+            <enum name="zoom" value="2" />
+            <enum name="depth" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TextViewTabColor">
+        <attr name="colorText_default_color" format="color|reference" />
+        <attr name="colorText_change_color" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="LayoutTab">
+        <attr name="tab_type">
+            <enum name="rect" value="0" />
+            <enum name="tri" value="1" />
+            <enum name="round" value="2" />
+            <enum name="color" value="3" />
+            <enum name="res" value="4" />
+        </attr>
+        <attr name="tab_color" format="color|reference" />
+        <attr name="tab_width" format="dimension" />
+        <attr name="tab_height" format="dimension" />
+        <attr name="tab_round_size" format="dimension" />
+        <attr name="tab_margin_l" format="dimension" />
+        <attr name="tab_margin_t" format="dimension" />
+        <attr name="tab_margin_r" format="dimension" />
+        <attr name="tab_margin_b" format="dimension" />
+        <attr name="tab_click_animTime" format="integer" />
+        <attr name="tab_item_res" format="reference" />
+        <attr name="tab_item_autoScale" format="boolean" />
+        <attr name="tab_scale_factor" format="float" />
+        <attr name="tab_orientation">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="2" />
+        </attr>
+        <attr name="tab_action_orientation">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="tab_isAutoScroll" format="boolean" />
+        <attr name="tab_visual_count" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="LayoutLabel">
+        <attr name="label_maxSelectCount" format="integer" />
+        <attr name="label_isAutoScroll" format="boolean" />
+        <attr name="label_showLine" format="integer" />
+        <attr name="label_showMore_Color" format="color" />
+        <attr name="label_showMore_layoutId" format="reference" />
+        <attr name="label_handUp_layoutId" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="top.autoget.autokit">
+    <!--@RequiresPermission无效-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.LOCAL_MAC_ADDRESS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application>
+        <provider
+            android:name="AKit$FileProvider4AutoKit"
+            android:authorities="top.autoget.autokit.AKit.FileProvider4AutoKit"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="AKit$ContentProvider4AutoKit"
+            android:authorities="top.autoget.autokit.AKit.ContentProvider4AutoKit"
+            android:exported="false" />
+        <!--下载-->
+        <service android:name=".FileKit$DownloadService" />
+        <!--定位-->
+        <service android:name=".LocationKit$LocationService" />
+        <activity android:name=".PermissionKit$BuilderPermissions$PermissionActivity" />
+    </application>
+</manifest>

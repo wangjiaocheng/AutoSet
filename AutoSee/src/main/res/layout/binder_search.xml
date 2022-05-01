@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.SearchView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapter_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:autofillHints="输入搜索内容"
+    android:imeOptions="actionSearch"
+    android:inputType="textAutoComplete">
+
+</androidx.appcompat.widget.SearchView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.amap.api.navi.AMapHudView
+        android:id="@+id/hudview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.amap.api.navi.AMapNaviView
+        android:id="@+id/navi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.amap.api.navi.view.NextTurnTipView
+        android:id="@+id/nextTurnTipView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.amap.api.navi.view.DirectionView
+        android:id="@+id/directionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.amap.api.navi.view.TrafficButtonView
+        android:id="@+id/trafficButtonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap" />
+
+    <com.amap.api.navi.view.TrafficProgressBar
+        android:id="@+id/trafficProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true" />
+
+    <com.amap.api.navi.view.DriveWayView
+        android:id="@+id/driveWayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.amap.api.navi.view.ZoomButtonView
+        android:id="@+id/zoomButtonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap" />
+
+    <com.amap.api.navi.view.ZoomInIntersectionView
+        android:id="@+id/zoomInIntersectionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.amap.api.navi.view.OverviewButtonView
+        android:id="@+id/overviewButtonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap" />
+</RelativeLayout>

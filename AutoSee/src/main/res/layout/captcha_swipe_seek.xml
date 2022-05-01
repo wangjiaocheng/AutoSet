@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#F2ECE1"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp">
+
+            <top.autoget.autosee.CaptchaSwipe
+                android:id="@+id/swipe_captcha"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                app:captchaHeight="40dp"
+                app:captchaWidth="40dp"
+                tools:src="@mipmap/material_warm" />
+
+            <SeekBar
+                android:id="@+id/swipe_seek"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/swipe_selector_drag"
+                android:splitTrack="false"
+                android:thumb="@drawable/swipe_layer_thumb"
+                android:thumbOffset="0dip" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/swipe_reset"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/swipe_shape_reset"
+        android:text="重置"
+        android:textColor="#FFFFFFFF" />
+</LinearLayout>

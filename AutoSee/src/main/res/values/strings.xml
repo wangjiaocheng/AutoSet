@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoSee</string>
+    <string name="recycler_loading">Loading…</string>
+    <string name="recycler_load_failed">load more failed</string>
+    <string name="recycler_load_complete">Click to load more</string>
+    <string name="recycler_load_end">No more data</string>
+    <array name="material">
+        <item>@mipmap/material_bamboo</item>
+        <item>@mipmap/material_bud</item>
+        <item>@mipmap/material_color</item>
+        <item>@mipmap/material_dandelion</item>
+        <item>@mipmap/material_forest</item>
+        <item>@mipmap/material_frog</item>
+        <item>@mipmap/material_grass</item>
+        <item>@mipmap/material_leaf</item>
+        <item>@mipmap/material_monkey</item>
+        <item>@mipmap/material_orange</item>
+        <item>@mipmap/material_plum</item>
+        <item>@mipmap/material_road</item>
+        <item>@mipmap/material_room</item>
+        <item>@mipmap/material_seed</item>
+        <item>@mipmap/material_sky</item>
+        <item>@mipmap/material_snow</item>
+        <item>@mipmap/material_sun</item>
+        <item>@mipmap/material_tulip</item>
+        <item>@mipmap/material_warm</item>
+        <item>@mipmap/material_white</item>
+    </array>
+</resources>

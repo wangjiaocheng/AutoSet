@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flow_item_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/flow_item_selector_tag"
+    android:gravity="center"
+    android:paddingLeft="18dp"
+    android:paddingTop="6dp"
+    android:paddingRight="18dp"
+    android:paddingBottom="6dp"
+    android:textColor="@drawable/flow_item_selector_color"
+    android:textSize="14sp"
+    tools:text="FlowItem" />

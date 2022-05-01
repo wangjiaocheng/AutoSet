@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <root-path
+        name="root-path"
+        path="" /><!--配置可以读取到sd卡和一些应用分身的目录,/-->
+    <files-path
+        name="files-path"
+        path="." /><!--content.getFileDir(),/data/data/<包名>/files-->
+    <cache-path
+        name="cache-path"
+        path="." /><!--content.getCacheDir(),/data/data/<包名>/cache-->
+    <external-path
+        name="external_storage_root"
+        path="." /><!--Environment.getExternalStorageDirectory(),/storage/emulate/0-->
+    <external-files-path
+        name="external_file_path"
+        path="." /><!--ContextCompat.getExternalFilesDirs(),/storage/emulate/0/Android/data/<包名>/files-->
+    <external-cache-path
+        name="external_cache_path"
+        path="." /><!--ContextCompat.getExternalCacheDirs(),/storage/emulate/0/Android/data/<包名>/cache-->
+</paths>
