@@ -1562,7 +1562,7 @@ dependencies {
 | 04   | 04. builderQRCode    | 构建二维码 |
 | 05   | 05. createQRCode     | 创建二维码 |
 
->- implementation "com.google.zxing:core:3.4.1"
+>- implementation "com.google.zxing:core:3.5.0"
 
 ### *066.软包PackageKit(18)*
 
